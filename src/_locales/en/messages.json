@@ -1,0 +1,23 @@
+{
+    "EXT_NAME": {
+      "message": "Tab Search: Search the content of your tabs"
+    },
+    "EXT_NAME_SHORT": {
+      "message": "Tab Search"
+    },
+    "EXT_DESCRIPTION": {
+      "message": "Search the entire content of all of your open tabs, jump in and out of your tabs with ease."
+    },
+    "ACCELERATOR_SEARCH": {
+      "message": "Alt+F"
+    },
+    "ACCELERATOR_SEARCH_MAC": {
+      "message": "\u2325F"
+    },
+    "PLACEHOLDER_INDEXING": {
+      "message": "Indexing tabs..."
+    },
+    "PLACEHOLDER_SEARCH": {
+      "message": "Search tabs..."
+    }
+  }
