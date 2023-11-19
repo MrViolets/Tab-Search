@@ -7,7 +7,6 @@ import * as inject from './scripts/inject.js'
 
 chrome.runtime.onInstalled.addListener(onInstalled)
 chrome.runtime.onStartup.addListener(onStartup)
-chrome.runtime.onMessage.addListener(onMessageReceived)
 
 async function onInstalled (info) {
   await setActionTitle()
@@ -29,15 +28,4 @@ async function setActionTitle () {
   }
 
   await ch.actionSetTitle({ title: actionTitle })
-}
-
-async function onMessageReceived (message, sender, sendResponse) {
-  if (message.context === 'background') {
-    try {
-      await ch.tabsUpdate(message.tabId, { active: true })
-      await ch.sendMessageToTab(message.tabId, { context: 'highlight', searchQuery: message.searchQuery })
-    } catch (error) {
-      console.error(error)
-    }
-  }
 }

@@ -181,8 +181,9 @@ async function onResultsClicked (e) {
     const searchQuery = document.getElementById('search').value
 
     try {
-      // await ch.tabsUpdate(tabId, { active: true })
-      await ch.sendMessage({ context: 'background', tabId, searchQuery })
+      await ch.sendMessageToTab(tabId, { context: 'highlight', searchQuery: searchQuery })
+      await ch.tabsUpdate(tabId, { active: true })
+      window.close()
     } catch (error) {
       console.error(error)
     }
