@@ -8,7 +8,7 @@ import * as inject from './scripts/inject.js'
 chrome.runtime.onInstalled.addListener(onInstalled)
 chrome.runtime.onStartup.addListener(onStartup)
 
-async function onInstalled (info) {
+async function onInstalled () {
   await setActionTitle()
   await inject.injectScriptsIfNeeded()
 }
