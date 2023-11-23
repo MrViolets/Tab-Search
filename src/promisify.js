@@ -5,7 +5,6 @@
 export const tabsQuery = promisifyChromeMethod(chrome.tabs.query.bind(chrome.tabs))
 export const tabsUpdate = promisifyChromeMethod(chrome.tabs.update.bind(chrome.tabs))
 export const executeScript = promisifyChromeMethod(chrome.scripting.executeScript.bind(chrome.scripting))
-export const sendMessage = promisifyChromeMethod(chrome.runtime.sendMessage.bind(chrome.runtime))
 export const sendMessageToTab = promisifyChromeMethod(chrome.tabs.sendMessage.bind(chrome.tabs))
 export const tabsReload = promisifyChromeMethod(chrome.tabs.reload.bind(chrome.tabs))
 export const getPlatformInfo = promisifyChromeMethod(chrome.runtime.getPlatformInfo.bind(chrome.runtime))
