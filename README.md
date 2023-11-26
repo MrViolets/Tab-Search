@@ -1,6 +1,6 @@
 # Tab Search
 
-![Screenshot](./docs/assets/screenshot.png?raw=true)
+![Screenshot](./docs/assets/screenshot.jpg?raw=true)
 
 Tab Search is a Chrome extension that lets you search the content of all of your tabs.
 
