@@ -1,4 +1,4 @@
-:root {
+body.chrome {
   color-scheme: light;
   --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", Arial, sans-serif;
   --accent: #FFAD00;
@@ -12,8 +12,22 @@
   --active: #E5E5E5;
 }
 
+body.edge {
+  color-scheme: light;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", Arial, sans-serif;
+  --accent: #FFAD00;
+  --primary: #242121;
+  --secondary: #7e7e7e;
+  --tertiary: #ededed;
+  --quaternary: #F2F2F2;
+  --separator: #ebebeb;
+  --disabled: #797979;
+  --background: #ffffff;
+  --active: rgba(0, 0, 0, 0.1);
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
+  body.chrome {
     color-scheme: dark;
     --accent: #FFAD00;
     --primary: #e3e3e3;
@@ -24,6 +38,19 @@
     --disabled: #565656;
     --background: #1f1f1f;
     --active: #363636;
+  }
+
+  body.edge {
+    color-scheme: dark;
+    --accent: #FFAD00;
+    --primary: #F5F5F5;
+    --secondary: #A3A3A3;
+    --tertiary: #636363;
+    --quaternary: #282828;
+    --separator: #585858;
+    --background: #4A4A4A;
+    --disabled: #A5A5A5;
+    --active: rgba(255, 255, 255, 0.1);
   }
 }
 
@@ -86,6 +113,12 @@ body {
   margin-right: 16px;
 }
 
+.edge .favicon-container {
+  background: transparent;
+  height: 16px;
+  width: 16px;
+}
+
 .title,
 .url {
   white-space: nowrap;
@@ -112,6 +145,10 @@ body {
   line-height: 1.35em;
 }
 
+.edge .url {
+  font-size: 11px;
+}
+
 .favicon {
   height: 16px;
   width: 16px;
@@ -124,6 +161,10 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.35em;
+}
+
+.edge .result-line {
+  color: var(--primary);
 }
 
 .search-bar {
@@ -148,6 +189,10 @@ body {
   outline: none;
 }
 
+.edge .search-input {
+  padding-left: 52px;
+}
+
 .search-input::placeholder {
   color: var(--secondary);
 }
@@ -159,6 +204,10 @@ body {
   left: 26px;
   height: 20px;
   width: 20px;
+}
+
+.edge .search-icon {
+  left: 18px;
 }
 
 .search-icon svg {
