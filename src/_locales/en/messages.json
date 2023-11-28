@@ -9,10 +9,10 @@
       "message": "Search the entire content of all of your open tabs, jump in and out of your tabs with ease."
     },
     "ACCELERATOR_SEARCH": {
-      "message": "Alt+F"
+      "message": "Alt+A"
     },
     "ACCELERATOR_SEARCH_MAC": {
-      "message": "\u2325F"
+      "message": "\u2325A"
     },
     "PLACEHOLDER_INDEXING": {
       "message": "Indexing tabs..."
